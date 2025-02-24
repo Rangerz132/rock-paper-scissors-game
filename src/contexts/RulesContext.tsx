@@ -1,9 +1,5 @@
 import { createContext, useContext, useState } from "react";
 
-export type RulesContextProviderProps = {
-  children: React.ReactNode;
-};
-
 export type RulesContext = {
   rules: boolean;
   setRules: React.Dispatch<React.SetStateAction<boolean>>;
@@ -11,7 +7,11 @@ export type RulesContext = {
 
 export const RulesContext = createContext<RulesContext | null>(null);
 
-export function RulesContextProvider({ children }: RulesContextProviderProps) {
+export function RulesContextProvider({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const [rules, setRules] = useState(false);
 
   return (

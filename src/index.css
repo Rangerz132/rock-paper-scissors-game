@@ -4,14 +4,14 @@
 @theme {
   --font-barlow: "Barlow Semi Condensed", serif;
 
-  --color-primary-scissors-from: hsl(39, 89%, 49%);
-  --color-primary-scissors-to: hsl(40, 84%, 53%);
+  --color-primary-scissors-from: hsl(40, 84%, 53%);
+  --color-primary-scissors-to: hsl(39, 89%, 49%);
 
-  --color-primary-paper-from: hsl(230, 89%, 62%);
-  --color-primary-paper-to: hsl(230, 89%, 65%);
+  --color-primary-paper-from: hsl(230, 89%, 65%);
+  --color-primary-paper-to: hsl(230, 89%, 62%);
 
-  --color-primary-rock-from: hsl(349, 71%, 52%);
-  --color-primary-rock-to: hsl(349, 70%, 56%);
+  --color-primary-rock-from: hsl(349, 70%, 56%);
+  --color-primary-rock-to: hsl(349, 71%, 52%);
 
   --color-neutral-dark-text: hsl(229, 25%, 31%);
   --color-neutral-score-text: hsl(229, 64%, 46%);
