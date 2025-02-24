@@ -25,6 +25,10 @@
   body {
     @apply font-barlow  bg-radial-[at_50%_0%] from-background-radial-from to-background-radial-to w-screen h-screen;
   }
+
+  h1 {
+    @apply uppercase font-bold text-4xl;
+  }
 }
 
 @layer components {
@@ -34,5 +38,9 @@
 
   .cta-1 {
     @apply uppercase bg-transparent rounded-md font-semibold py-2 px-8 text-white border-1 border-white tracking-widest hover:bg-white hover:text-neutral-score-text transition-all cursor-pointer;
+  }
+
+  .bottom-center {
+    @apply absolute left-[50%] -translate-x-1/2 bottom-12;
   }
 }

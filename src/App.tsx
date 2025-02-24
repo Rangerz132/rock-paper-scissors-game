@@ -1,7 +1,11 @@
 import Header from "./components/Header";
+import RulesSection from "./components/rules/RulesSection";
 import Button from "./components/ui/buttons/Button";
+import { RulesContext, useRulesContext } from "./contexts/RulesContext";
 
 function App() {
+  const { rules, setRules } = useRulesContext(RulesContext);
+
   return (
     <div>
       <div className="wrapper">
@@ -13,10 +17,21 @@ function App() {
       </div>
 
       {/** Rules button */}
-      <div className="absolute left-[50%] -translate-x-1/2 bottom-12">
-        <Button onClick={() => {}} className="cta-1">
+      <div className="bottom-center">
+        <Button onClick={() => setRules(true)} className="cta-1">
           Rules
         </Button>
+      </div>
+
+      {/** Rules section */}
+      <div
+        className={`absolute w-screen h-screen left-0 top-0 transition-all duration-200 ${
+          rules
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0  pointer-events-none"
+        }`}
+      >
+        <RulesSection />
       </div>
     </div>
   );

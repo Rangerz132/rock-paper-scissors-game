@@ -4,7 +4,7 @@ const ScoreSection = () => {
       <div className="uppercase tracking-widest font-semibold text-xs text-neutral-score-text">
         Score
       </div>
-      <div className="font-bold text-5xl text-neutral-dark-text">13</div>
+      <h1 className="text-neutral-dark-text">13</h1>
     </div>
   );
 };
