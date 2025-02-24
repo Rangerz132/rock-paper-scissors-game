@@ -1,1 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-barlow: "Barlow Semi Condensed", serif;
+
+  --color-primary-scissors-from: hsl(39, 89%, 49%);
+  --color-primary-scissors-to: hsl(40, 84%, 53%);
+
+  --color-primary-paper-from: hsl(230, 89%, 62%);
+  --color-primary-paper-to: hsl(230, 89%, 65%);
+
+  --color-primary-rock-from: hsl(349, 71%, 52%);
+  --color-primary-rock-to: hsl(349, 70%, 56%);
+
+  --color-neutral-dark-text: hsl(229, 25%, 31%);
+  --color-neutral-score-text: hsl(229, 64%, 46%);
+  --color-neutral-header-outline: hsl(217, 16%, 45%);
+
+  --color-background-radial-from: hsl(214, 47%, 23%);
+  --color-background-radial-to: hsl(237, 49%, 15%);
+}
+
+@layer base {
+  body {
+    @apply font-barlow;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply max-w-[960px] mx-auto px-6;
+  }
+}
