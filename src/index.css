@@ -23,12 +23,16 @@
 
 @layer base {
   body {
-    @apply font-barlow;
+    @apply font-barlow  bg-radial-[at_50%_0%] from-background-radial-from to-background-radial-to w-screen h-screen;
   }
 }
 
 @layer components {
   .wrapper {
     @apply max-w-[960px] mx-auto px-6;
+  }
+
+  .cta-1 {
+    @apply uppercase bg-transparent rounded-md font-semibold py-2 px-8 text-white border-1 border-white tracking-widest hover:bg-white hover:text-neutral-score-text transition-all cursor-pointer;
   }
 }
