@@ -20,7 +20,7 @@ const GameUserSelectionSection = () => {
   };
 
   return (
-    <div className="relative aspect-square mx-auto w-[calc(100%-4.25rem)]">
+    <div className="relative aspect-square mx-auto w-[calc(100%-4.25rem)] sm:w-[calc(50%-3.25rem)]">
       {/** Background shape */}
       <img
         src={TriangleBackground}
@@ -31,17 +31,17 @@ const GameUserSelectionSection = () => {
       {/** Buttons */}
       <GameChoiceButton
         choice={ChoiceDataList[0]}
-        className="absolute top-0 -translate-y-1/2 left-0 -translate-x-1/4 cursor-pointer"
+        className="absolute top-0 -translate-y-1/2 left-0 -translate-x-1/4 cursor-pointer hover:scale-105 transition-all duration-200"
         onClick={handleButtonClick}
       />
       <GameChoiceButton
         choice={ChoiceDataList[1]}
-        className="absolute top-0 -translate-y-1/2 right-0 translate-x-1/4 cursor-pointer"
+        className="absolute top-0 -translate-y-1/2 right-0 translate-x-1/4 cursor-pointer hover:scale-105 transition-all duration-200"
         onClick={handleButtonClick}
       />
       <GameChoiceButton
         choice={ChoiceDataList[2]}
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 cursor-pointer"
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 cursor-pointer hover:scale-105 transition-all duration-200"
         onClick={handleButtonClick}
       />
     </div>

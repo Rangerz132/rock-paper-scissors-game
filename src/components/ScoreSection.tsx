@@ -4,7 +4,7 @@ const ScoreSection = () => {
   const { game } = useGameContext(GameContext);
 
   return (
-    <div className="bg-white rounded-md flex flex-col  py-2 px-6 items-center justify-center">
+    <div className="bg-white rounded-md flex flex-col  py-2 px-6 items-center justify-center sm:px-8">
       <div className="uppercase tracking-widest font-semibold text-xs text-neutral-score-text">
         Score
       </div>

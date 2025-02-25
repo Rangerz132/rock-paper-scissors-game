@@ -12,12 +12,12 @@ const GameChoiceButton = (props: {
     >
       {/** Color background */}
       <div
-        className={`${props.choice.gradient.from} rounded-full w-32 h-32 flex items-center justify-center relative z-2`}
+        className={`${props.choice.gradient.from} rounded-full w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center relative z-2`}
       >
         {/** White backround shadow */}
-        <div className="bg-neutral-300 rounded-full w-25 h-24 flex items-center justify-center relative z-3">
+        <div className="bg-neutral-300 rounded-full w-25 h-24 sm:w-31.5 sm:h-32 flex items-center justify-center relative z-3">
           {/** White backround  */}
-          <div className="bg-neutral-200 rounded-full w-25 h-24 top-1 absolute z-4"></div>
+          <div className="bg-neutral-200 rounded-full w-25 h-24 sm:w-31.5 sm:h-32 top-1 absolute z-4"></div>
           {/** Icon */}
           <img
             src={props.choice.icon.url}
@@ -29,7 +29,7 @@ const GameChoiceButton = (props: {
 
       {/** Color background shadow*/}
       <div
-        className={`${props.choice.gradient.to} rounded-full w-32 h-32 flex items-center justify-center absolute top-1 z-1 shadow-xl`}
+        className={`${props.choice.gradient.to} rounded-full w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center absolute top-1 z-1 shadow-xl`}
       ></div>
     </div>
   );

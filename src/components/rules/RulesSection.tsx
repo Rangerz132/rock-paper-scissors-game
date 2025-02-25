@@ -10,7 +10,7 @@ const RulesSection = () => {
         {/** Title */}
         <h1 className="text-neutral-dark-text">Rules</h1>
         {/** Image  */}
-        <img src={RulesDiagram} alt={"rules"} />
+        <img src={RulesDiagram} alt={"rules"} className="w-full sm:w-[60%]" />
         {/** Close button */}
         <CloseButton
           onClick={() => setRules(false)}

@@ -27,10 +27,10 @@
   }
 
   h1 {
-    @apply uppercase font-bold text-6xl;
+    @apply uppercase font-bold text-6xl sm:text-8xl;
   }
   h2 {
-    @apply uppercase font-bold text-4xl;
+    @apply uppercase font-bold text-4xl sm:text-6xl;
   }
   h3 {
     @apply uppercase font-semibold text-base tracking-widest;
@@ -39,7 +39,7 @@
 
 @layer components {
   .wrapper {
-    @apply max-w-[960px] mx-auto px-6;
+    @apply max-w-[768px] mx-auto px-6;
   }
 
   .cta-1 {
