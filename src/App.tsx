@@ -8,7 +8,7 @@ function App() {
   const { rules, setRules } = useRulesContext(RulesContext);
 
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen h-[100dvh]">
       <div className="wrapper h-full flex flex-col justify-between items-center pt-6 pb-10">
         {/** Header */}
         <Header />
@@ -26,7 +26,7 @@ function App() {
 
       {/** Rules section */}
       <div
-        className={`absolute z-10 w-full h-full left-0 top-0 transition-all duration-200 ${
+        className={`fixed z-10 w-full h-[100dvh] left-0 top-0 transition-all duration-200 ${
           rules
             ? "opacity-100 pointer-events-auto"
             : "opacity-0  pointer-events-none"
