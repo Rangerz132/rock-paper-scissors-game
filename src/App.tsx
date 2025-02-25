@@ -10,8 +10,13 @@ function App() {
   return (
     <div className="w-screen h-screen">
       <div className="wrapper h-full flex flex-col justify-between items-center pt-6 pb-10">
+        {/** Header */}
         <Header />
+
+        {/** Game Section */}
         <GameSection />
+
+        {/** Rules Button */}
         <div>
           <Button onClick={() => setRules(true)} className="cta-1">
             Rules

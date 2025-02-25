@@ -27,7 +27,13 @@
   }
 
   h1 {
+    @apply uppercase font-bold text-6xl;
+  }
+  h2 {
     @apply uppercase font-bold text-4xl;
+  }
+  h3 {
+    @apply uppercase font-semibold text-base tracking-widest;
   }
 }
 
@@ -40,7 +46,7 @@
     @apply uppercase bg-transparent rounded-md font-semibold py-2 px-8 text-white border-1 border-white tracking-widest hover:bg-white hover:text-neutral-score-text transition-all cursor-pointer;
   }
 
-  .bottom-center {
-    @apply absolute left-[50%] -translate-x-1/2 bottom-12;
+  .cta-2 {
+    @apply uppercase bg-white rounded-md font-semibold py-2 px-16 text-neutral-score-text  tracking-widest hover:bg-neutral-score-text hover:text-white  transition-all cursor-pointer;
   }
 }

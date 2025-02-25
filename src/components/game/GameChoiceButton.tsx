@@ -1,11 +1,15 @@
-import { ChoiceData } from "../../types";
+import { ChoiceData, ChoiceType } from "../../types";
 
 const GameChoiceButton = (props: {
   choice: ChoiceData;
   className?: string;
+  onClick: (choice: ChoiceType) => void;
 }) => {
   return (
-    <div className={`absolute ${props.className}`}>
+    <div
+      className={`${props.className}`}
+      onClick={() => props.onClick(props.choice.choice)}
+    >
       {/** Color background */}
       <div
         className={`${props.choice.gradient.from} rounded-full w-32 h-32 flex items-center justify-center relative z-2`}

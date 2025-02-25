@@ -3,7 +3,7 @@ import RockIcon from "./assets/images/icon-rock.svg";
 import ScissorsIcon from "./assets/images/icon-scissors.svg";
 import PaperIcon from "./assets/images/icon-paper.svg";
 
-const RockChoiceData: ChoiceData = {
+export const RockChoiceData: ChoiceData = {
   choice: "Rock",
   icon: {
     url: RockIcon,
@@ -13,11 +13,9 @@ const RockChoiceData: ChoiceData = {
     from: "bg-primary-rock-from",
     to: "bg-primary-rock-to",
   },
-  win: "Scissors",
-  lose: "Paper",
 };
 
-const ScissorsChoiceData: ChoiceData = {
+export const ScissorsChoiceData: ChoiceData = {
   choice: "Scissors",
   icon: {
     url: ScissorsIcon,
@@ -27,11 +25,9 @@ const ScissorsChoiceData: ChoiceData = {
     from: "bg-primary-scissors-from",
     to: "bg-primary-scissors-to",
   },
-  win: "Paper",
-  lose: "Rock",
 };
 
-const PaperChoiceData: ChoiceData = {
+export const PaperChoiceData: ChoiceData = {
   choice: "Paper",
   icon: {
     url: PaperIcon,
@@ -41,8 +37,6 @@ const PaperChoiceData: ChoiceData = {
     from: "bg-primary-paper-from",
     to: "bg-primary-paper-to",
   },
-  win: "Rock",
-  lose: "Scissors",
 };
 
 export const ChoiceDataList: ChoiceData[] = [

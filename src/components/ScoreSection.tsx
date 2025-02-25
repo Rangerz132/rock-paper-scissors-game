@@ -8,7 +8,7 @@ const ScoreSection = () => {
       <div className="uppercase tracking-widest font-semibold text-xs text-neutral-score-text">
         Score
       </div>
-      <h1 className="text-neutral-dark-text">{game.score}</h1>
+      <h2 className="text-neutral-dark-text">{game.score}</h2>
     </div>
   );
 };

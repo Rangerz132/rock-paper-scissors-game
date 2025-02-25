@@ -10,6 +10,4 @@ export type ChoiceData = {
     from: string;
     to: string;
   };
-  win: ChoiceType;
-  lose: ChoiceType;
 };
